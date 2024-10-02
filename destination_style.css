@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Inline&family=Bungee+Tint&family=Cherry+Cream+Soda&family=Fredericka+the+Great&family=Grechen+Fuemen&family=M+PLUS+Code+Latin:wght@100..700&family=Merienda:wght@300..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Mono+One&family=Sofadi+One&display=swap');/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-header {
+    background-color: #002366;
+    padding: 0.1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff9900;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-btn {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #002366;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.4s, transform 0.3s;
+}
+
+.header-btn:hover {
+    background-color: white;
+    color: #002366;
+    transform: scale(1.1);
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: aliceblue;
+    z-index: 2;
+}
+
+.text-box h1 {
+    font-family: "Quantico", sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.979);
+}
+
+.text-box p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-right: 600px;
+    color: #ffffff;
+    text-shadow: 2px 3px 4px rgb(0, 0, 0);
+}
+
+.text-box span {
+    background: red;
+    height: 2px;
+    width: 400px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+@keyframes slide {
+    0% { opacity: 0; }
+    10% { opacity: 1; } 
+    50% { opacity: 1; } 
+    60% { opacity: 0; } 
+    100% { opacity: 0; }
+}
+
+.banner1 {
+    animation: slide 27.5s infinite; 
+    opacity: 1;
+}
+
+.banner2 {
+    animation: slide 27.5s infinite 2.5s; 
+}
+
+.banner3 {
+    animation: slide 27.5s infinite 5s;
+}
+
+.banner4 {
+    animation: slide 27.5s infinite 7.5s;
+}
+
+.banner5 {
+    animation: slide 27.5s infinite 10s;
+}
+
+.banner6 {
+    animation: slide 27.5s infinite 12.5s;
+}
+
+.banner7 {
+    animation: slide 27.5s infinite 15s;
+}
+
+.banner8 {
+    animation: slide 27.5s infinite 17.5s;
+}
+
+.banner9 {
+    animation: slide 27.5s infinite 20s;
+}
+
+.banner10 {
+    animation: slide 27.5s infinite 22.5s;
+}
+
+.banner11 {
+    animation: slide 27.5s infinite 25s;
+}
+
+.main-footer {
+    background-color: #002366; 
+    padding: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #ff9900; 
+}

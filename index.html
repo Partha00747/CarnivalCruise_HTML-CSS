@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat on Sea | Animation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        body {
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px ;
+        }
+        header .logo {
+            font-size: 2em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        header nav {
+            display: flex;
+            gap: 50px;
+           margin-right: 30px;
+        }
+        header nav a {
+            text-decoration: none;
+            font-size: 1.5em;
+            color: #333;
+            position: relative;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+        header nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #ff5733;
+            left: 0;
+            bottom: 0;
+            transition: width 0.3s ease;
+        }
+        header nav a:hover {
+            color: #ff5733;
+        }
+        header nav a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo/SP.jpg" alt="Carnival Cruises Logo" style="height: 90px; width: 100px;">
+        </div>
+        <nav>
+            <a href="about us.html">About Us</a>
+            <a href="deals.html">Deals</a>
+            <a href="destination.html">Destinations</a>
+            <a href="Ships.html">Cruises</a>
+            <a href="log_in.html">log In</a>
+        </nav>
+    </header>
+            <div class="container">
+                <img src="images/p1.jpg" class="sea-img" alt="">
+                <div class="boat">
+                    <img src="images/b2.png" class="boat-img" alt="">
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="banner">
+        <div class="content">
+            <h1 class="left">
+                <span>~ Carnival</span>
+                <span class="gap">Cruises ~</span>
+            </h1>
+            <div class="image">  
+            </div>
+        </div>
+    </section>
+    <section class="grid grid-1">
+        <figure>
+            <img src="images/sich.png" alt="">
+        </figure>
+        <figure>
+            <img src="images/3.png" alt="" class="autoRotate">
+        </figure>
+        <h2 class="autoShow">Introduce Us</h2>
+    </section>
+    <section class="grid grid-2">
+        <div class="autoShow">
+            <figure>
+                <img src="images/6.png" alt="">
+            </figure>
+            <p>
+                You don’t have to travel far for an incredible vacation. Cruise from a port near you to top-rated vacation destinations in the tropics and beyond. No matter where in the world you’re sailing from, you’ll find plenty of deals on epic itineraries sailing right from your backyard.
+            </p>
+        </div>
+        <div class="autoShow">
+            It all starts with the boldest cruise ships at sea — Whether you’re traveling solo or vacationing with the whole extended family, you’ll have cruise rooms to choose from, like affordable connecting staterooms that are perfect for groups, romantic rooms for couples craving rejuvenation and relaxation, and even a thrill-filled Ultimate Family Suite with a private game room and in-suite slide.
+            Everyone deserves a vacation. You’ll find endless opportunities to make the most of every moment — like game-changing activities, world-class dining, show-stopping entertainment, and plenty of ways to unwind in the sun.
+        </div>
+        <div class="autoShow">
+            <figure>
+                <img src="images/2.png" alt="">
+            </figure>
+            <p><br>
+                Unlock the most incredible travel destinations. Get on island time and unwind on some of the best beaches in the world, venture deep into the rainforests, and snorkel the most vibrant reefs on a Caribbean or Bahamas cruise getaway with the whole family.
+            Dine, dance, laugh, and relax with onboard activities, premier entertainment, and unforgettable shore excursions.Add a wide range of superb dining options and spectacular entertainment and you'll experience your best holiday ever. 
+            </p>
+        </div>
+        <div class="autoShow">
+            <figure>
+                <img src="images/777.png" alt="">
+            </figure>
+        </div>
+    </section>
+    <section class="grid grid-3">
+        <div class="autoBLur">ALASKA</div>
+        <div class="autoBLur">CARIBBEAN</div>
+        <div class="autoBLur">HAWAII</div>
+        <div class="autoBLur">BERMUDA</div>
+        <div class="autoBLur">PANAMA CANAL</div>
+        <div class="autoBLur">EUROPE</div>
+        <div class="autoBLur">MEXICANA</div>
+        <div class="autoBLur">MIAMI</div>
+        <div class="autoBLur">FUJI</div>
+        <div class="autoBLur">BAHAMAS </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="logo/SP2.png" alt="Carnival Cruises Logo">
+            </div>
+            <ul class="footer-nav">
+                <li><a href="log_in.html">Login</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="about us.html">Contact</a></li>
+                <li><a href="about us.html">Privacy Policy</a></li>
+            </ul>
+            <div class="footer-buttons">
+                <a href="destination.html" class="footer-btn">Take a Tour</a>
+                <a href="log_in.html" class="footer-btn">Be a Member</a>
+            </div>
+            <div class="footer-subscribe">
+                <input type="email" placeholder="Enter your email" required>
+                <button class="footer-btn">Get in Touch</button>
+            </div>
+        </div>
+        <div class="footer-lists">
+            <div class="footer-vertical-nav">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="destination.html">Destinations</a></li>
+                    <li><a href="deals.html">Cruise Deals</a></li>
+                    <li><a href="about us.html">Our Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-vertical-nav" style="margin-left: 2cm;">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="about us.html">Help Center</a></li>
+                    <li><a href="about us.html">Contact Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

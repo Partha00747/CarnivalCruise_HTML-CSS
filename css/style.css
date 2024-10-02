@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Inline&family=Bungee+Tint&family=Cherry+Cream+Soda&family=Eagle+Lake&family=Fredericka+the+Great&family=Grechen+Fuemen&family=M+PLUS+Code+Latin:wght@100..700&family=Merienda:wght@300..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Microbe&family=Rubik+Mono+One&family=Sofadi+One&display=swap');
+body, header, nav, footer, section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Amarante", serif;
+}
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #EDF1F4 1%, #2B3B5F 90%);
+}
+
+nav ul {
+    flex: 1;
+    text-align: center;
+    line-height: 2;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 25px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-family: "Amarante", serif;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 8px 12px;
+    border-bottom: dotted 4px #fff;
+}
+
+.container {
+    width: 100%;
+}
+
+.sea-img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.boat-img {
+    display: flex;
+    width: 550px;
+    margin-top: -510px;
+    filter: drop-shadow(0px 20px 10px black);
+    animation: boat 60s linear infinite;
+}
+
+@keyframes boat {
+    100% {
+        transform: translateX(1400px);
+    }
+    0% {
+        transform: translateX(0px);
+    }
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  
+  .link a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Amarante", serif;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(0, 0, 0), 0 0 12px rgb(246, 255, 0);
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+}
+
+.link a:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 7px rgb(255, 105, 105),
+        0 0 15px rgb(255, 55, 0), 0 0 20px rgb(255, 0, 0),
+        0 0 50px rgb(255, 0, 0), 0 0 100px rgb(255, 0, 0);
+}

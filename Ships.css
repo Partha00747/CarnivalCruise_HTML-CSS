@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Nabla&family=Vibes&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f5f0e1;
+    padding-top: 80px; 
+}
+
+.antique-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #002366;
+    color: #e4d4c8;
+    padding: 10px 0;
+    border-bottom: 3px solid #6d4c41;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.antique-header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.antique-header .logo img {
+    width: 50px; 
+    height: auto;
+    margin-right: 15px;
+}
+
+.antique-header .logo h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.antique-header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.antique-header nav ul li {
+    margin: 0 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.antique-header nav ul li a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.antique-header nav ul li a:hover {
+    color: #ff9900;
+}
+
+.antique-footer {
+    background-color: #002366;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #6d4c41;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.antique-footer p {
+    margin: 0;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+}
+.content section{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content section:nth-child(even){
+    background: rgb(255, 0, 204);
+}
+h2{
+    font-size: 5rem;
+    color: aliceblue;
+}
+.ShipSec {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden; 
+}
+
+.ShipSec h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.ShipSec .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; 
+    opacity: 1;
+}
+
+
+#Ship1 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff;
+    margin-bottom: 320px;
+    margin-left: 50px;
+}
+
+#Ship1 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+    color: #000000; 
+    margin-bottom: 150px; 
+    margin-left: -107px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship2 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 320px;
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+#Ship2 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem; 
+    color: #000000; 
+    margin-bottom: 90px; 
+    margin-left: -422px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship3 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 2.8rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 0px; 
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+#Ship3 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+    color: #ffffff; 
+    margin-bottom: -200px; 
+    margin-left: -375px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship4 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 320px; 
+    margin-left: -40px;
+    white-space: nowrap;
+}
+
+#Ship4 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 190px; 
+    margin-left: -440px;
+    
+}
+#Ship5 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 320px; 
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+#Ship5 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem; 
+    color: #ffffff; 
+    margin-bottom: 90px; 
+    margin-left: -260px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship6 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 0px; 
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+#Ship6 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem; 
+    color: #fdfdfd; 
+    margin-bottom: -130px;
+    margin-left: -310px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship7 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 320px; 
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+#Ship7 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #fffffff8; 
+    margin-bottom: 160px; 
+    margin-left: -320px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship8 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 320px; 
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+#Ship8 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #000000f8; 
+    margin-bottom: 150px;
+    margin-left: -440px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship9 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 320px; 
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+#Ship9 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #000000f8; 
+    margin-bottom: 160px; 
+    margin-left: -360px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship10 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 520px; 
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+#Ship10 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #fffffff8;
+    margin-bottom: 310px; 
+    margin-left: -350px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship11 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff;
+    margin-bottom: 330px; 
+    margin-left: 40px;
+    white-space: nowrap;
+}
+
+#Ship11 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #fffffff8; 
+    margin-bottom: 170px; 
+    margin-left: -330px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship12 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 540px; 
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+#Ship12 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #000000f8; 
+    margin-bottom: 370px; 
+    margin-left: -292px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship13 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 320px;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+#Ship13 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #000000f8; 
+    margin-bottom: 120px; 
+    margin-left: -370px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship14 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 420px; 
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+#Ship14 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #fffffff8; 
+    margin-bottom: 250px; 
+    margin-left: -230px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship15 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 520px; 
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+#Ship15 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #000000f8; 
+    margin-bottom: 360px; 
+    margin-left: -460px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship16 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff;
+    margin-bottom: 220px;
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+#Ship16 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #000000f8; 
+    margin-bottom: 60px; 
+    margin-left: -330px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship17 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 520px; 
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+#Ship17 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #fffffff8; 
+    margin-bottom: 360px; 
+    margin-left: -286px;
+    font-family: "MuseoModerno", sans-serif;
+}
+#Ship18 .ship-name {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 300px;
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+#Ship18 .ship-details {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #fffffff8; 
+    margin-bottom: 140px; 
+    margin-left: -294px;
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.read-more-button {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: skyblue; 
+    color: #3a2c2b; 
+    text-decoration: none;
+    border-radius: 5px; 
+    font-size: 1.2rem; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.read-more-button:hover {
+    background-color: #233ca9; 
+    color: #d4a373; 
+    transform: scale(1.1); 
+}

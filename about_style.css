@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=M+PLUS+Code+Latin:wght@100..700&family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Fredericka+the+Great&family=Grechen+Fuemen&family=M+PLUS+Code+Latin:wght@100..700&family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Inline&family=Bungee+Tint&family=Cherry+Cream+Soda&family=Fredericka+the+Great&family=Grechen+Fuemen&family=M+PLUS+Code+Latin:wght@100..700&family=Merienda:wght@300..900&family=Rubik+Mono+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background: linear-gradient(to bottom, #EDF1F4 25%,aqua, #2B3B5F 80%);
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a button {
+    background-color: transparent; 
+    color: rgb(0, 0, 0);             
+    padding: 3px 3px;        
+    border-color: #ff0329;             
+    border-radius: 8px;      
+    cursor: grab;           
+    font-size: 1.2rem;         
+    transition: background-color 0.5s ease;
+}
+
+a button:hover {
+    background-color: #f83131;
+}
+
+h1{
+    margin-top: 2.5%;
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    -webkit-box-reflect:below 0px linear-gradient(transparent,#0004);
+    line-height: 0.70em;
+    outline: none;
+    animation:animate9 5s linear infinite;
+}
+@keyframes animate9{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color:rgb(0, 0, 0);
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color:aqua;
+        text-shadow: 0 0 1px rgb(0, 0, 0),
+        0 0 5px rgb(0, 0, 0),
+        0 0 12px rgb(0, 0, 0);
+    }
+}
+h3{
+    font-family: "Fredericka the Great", serif;
+    font-size: x-large;
+    font-size: 2em;
+    word-spacing: 0.5em;
+    color: rgb(0, 0, 0);
+    text-shadow:  0px 0px 0 #e7e7e7, 1px 2px 0 #d60056;
+    margin-bottom: -30px;
+}
+h2{
+    text-align: center;
+    word-spacing: 0.5em;
+    color: rgb(23, 0, 0);
+}
+p{
+    font-family: "M PLUS Code Latin", monospace;
+    font-weight: 600;
+    font-size: larger;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    padding-top: 2%;
+}
+h4{
+    padding: 3%;
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 1.5em;
+    color: #2B3B5F;
+}
+
+
+@keyframes slide{
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%); 
+    }
+}
+.logos{
+    overflow: hidden;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+    padding: 0px 0;
+    background: white;
+    position: relative;
+    white-space: nowrap;
+}
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    content:"";
+    z-index: 2;
+}
+.logos:before{
+    left: 0;
+    background:linear-gradient(to left,rgba(0, 0, 0, 0),#ffffff); 
+}
+.logos:after{
+    right: 0;
+    background:linear-gradient(to right,rgba(255,255,255,0),rgb(255, 255, 255)); 
+}
+    
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+.logos-slide{
+    
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+.logos-slide img{
+    height: 90px;
+    margin: 0 35px;
+}
+
+.container {
+    position: relative;
+    z-index: 1001; 
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(images/wave.png) repeat-x; 
+    background-size: 1000px 100px;
+}
+.wave1 {
+    z-index: 1000;
+    opacity: 1;
+    animation: animateWave 10s linear infinite;
+    animation-delay: 0;
+}
+.wave2 {
+    z-index: 999;
+    opacity: 0.6;
+    animation: animateWave2 10s linear infinite;
+    bottom: 10px;
+    animation-delay: -5s;
+}
+.wave3 {
+    z-index: 998;
+    opacity: 0.3;
+    animation: animateWave 17s linear infinite;
+    bottom: 20px;
+    animation-delay: -2s;
+}
+.wave4 {
+    z-index: 997;
+    opacity: 0.7;
+    animation: animateWave2 15s linear infinite;
+    bottom: 30px;
+    animation-delay: -3s;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animateWave2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
